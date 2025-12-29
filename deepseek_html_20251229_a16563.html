@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPEEDNEWS – Actualités en temps réel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+
+<header>
+  <h1>SPEEDNEWS</h1>
+  <p>Actualités rapides • Cameroun & Monde</p>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#cameroun">Cameroun</a>
+    <a href="#international">International</a>
+    <a href="#sport">Sport</a>
+    <a href="#culture">Culture</a>
+    <a href="#langues">Langues locales</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>L’information en temps réel, dans ta langue</h2>
+  <p id="langue-affichee">Français • English • Dialectes camerounais</p>
+  <label>Choisir la langue : </label>
+  <select id="langue-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="pidgin">Pidgin</option>
+    <option value="duala">Duala</option>
+    <option value="ewondo">Ewondo</option>
+    <option value="fulfulde">Fulfuldé</option>
+    <option value="bassa">Bassa</option>
+  </select>
+</div>
+
+<section id="actualites">
+  <h2>Dernières actualités</h2>
+  <input type="text" id="search-bar" placeholder="🔍 Rechercher une actualité...">
+  <div class="news-grid">
+    
+    <div class="card" data-categorie="cameroun">
+      <span class="tag">Cameroun</span>
+      <h3>Vie chère : pourquoi les prix continuent d'augmenter</h3>
+      <p>Riz, huile, carburant et transport pèsent lourdement sur le budget des ménages camerounais.</p>
+      <button class="btn lire-btn" data-article="vie-chere">Lire</button>
+      <button class="btn audio-btn" data-audio="audio1" data-lang="pidgin">🔊 Écouter (Pidgin)</button>
+    </div>
+
+    <div class="card" data-categorie="economie">
+      <span class="tag">Économie</span>
+      <h3>Chômage des jeunes : entre débrouillardise et entrepreneuriat</h3>
+      <p>Face au manque d'emplois, de nombreux jeunes se tournent vers l'auto‑emploi.</p>
+      <button class="btn lire-btn" data-article="chomage-jeunes">Lire</button>
+      <button class="btn audio-btn" data-audio="audio2" data-lang="fr">🔊 Écouter</button>
+    </div>
+
+    <div class="card" data-categorie="societe">
+      <span class="tag">Société</span>
+      <h3>WhatsApp, première source d'information au Cameroun</h3>
+      <p>Rapide et accessible, WhatsApp supplante les médias traditionnels.</p>
+      <button class="btn lire-btn" data-article="whatsapp-info">Lire</button>
+      <button class="btn audio-btn" data-audio="audio3" data-lang="duala">🔊 Écouter (Duala)</button>
+    </div>
+
+    <div class="card" data-categorie="culture">
+      <span class="tag">Culture</span>
+      <h3>Musique urbaine camerounaise : une nouvelle génération s'impose</h3>
+      <p>De jeunes artistes gagnent une visibilité locale et internationale.</p>
+      <button class="btn lire-btn" data-article="musique-urbaine">Lire</button>
+      <button class="btn audio-btn" data-audio="audio4" data-lang="ewondo">🔊 Écouter (Ewondo)</button>
+    </div>
+
+    <div class="card" data-categorie="sport">
+      <span class="tag">Sport</span>
+      <h3>Lions Indomptables : attentes et pression</h3>
+      <p>La sélection nationale se prépare sous le regard attentif des supporters.</p>
+      <button class="btn lire-btn" data-article="lions-indomptables">Lire</button>
+      <button class="btn audio-btn" data-audio="audio5" data-lang="fulfulde">🔊 Écouter (Fulfuldé)</button>
+    </div>
+
+    <div class="card" data-categorie="langues">
+      <span class="tag">Langues locales</span>
+      <h3>L'actualité de la semaine en Pidgin</h3>
+      <p>Résumé audio des principales informations de la semaine.</p>
+      <button class="btn lire-btn" data-article="actualite-pidgin">Lire</button>
+      <button class="btn audio-btn" data-audio="audio6" data-lang="pidgin">🔊 Écouter (Pidgin)</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 SPEEDNEWS – L'info sans lenteur</p>
+  <p id="compteur-visites"></p>
+  <p id="heure-actuelle"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
